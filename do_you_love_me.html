@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+
+</head>
+<body>
+
+<p> Do You Love Me??</p>
+
+<button onclick="myFunction()">Yes</button>
+<button id="no" onclick="myFunction2()">No</button>
+
+<p id="show"></p>
+
+<script>
+    let dichuyen = document.getElementById("no");
+    dichuyen.style.position = 'relative';
+    dichuyen.style.left = '0px';
+    dichuyen.style.top = '0px';
+    function myFunction() {
+        document.getElementById("show").innerHTML = "<3";
+    }
+    function myFunction2() {
+        dichuyen.style.left = Math.random(dichuyen.style.left)*1000 + 'px';
+        dichuyen.style.top = Math.random(dichuyen.style.top)*1000 + 'px';
+    }
+
+</script>
+</body>
+</html>
